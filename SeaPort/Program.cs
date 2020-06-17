@@ -11,6 +11,7 @@ namespace SeaPort
     {
         static void Main(string[] args)
         {
+
             string input_file_path = "telnet.csv";
             string output_file = "telnet-output.csv";
             int ip_count = 0;
@@ -42,14 +43,12 @@ namespace SeaPort
                     {
                         try
                         {
-
                             var city = reader.City(ip);
                             string country = city.Country.IsoCode;
                             if (country == "NP")
                             {
                                 proc_ip_list.Add(ip);
                                 ip_count++;
-
                             }
                         }
                         catch (Exception e)
@@ -57,10 +56,8 @@ namespace SeaPort
                             // Skip IPs not present in DB.
                             continue;
                         }
-
                     }
                 }
-
             }
             catch (FileNotFoundException ex)
             {
