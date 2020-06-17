@@ -1,10 +1,12 @@
 # SeaPort
 
-SeaPort is a fast port scan result analyzer that consumes scan results from Rapid7 and filters those IPs specific to a country.
+SeaPort is a fast port scan result analyzer that consumes scan results from Rapid7 and filters those IPs specific to a country of your choosing.
 
-## Dependencies
-* ### MaxMind GeoIP2
+This project was done in C# as Python was too slow due to some dataset being too large.
 
-## Where to fetch your Scan Results?
+### Dependencies
+* #### MaxMind GeoIP2
+
+### Where to fetch your Scan Results?
 Scan results can be fetched from Rapid7's SONAR project [here](https://opendata.rapid7.com/).
 
